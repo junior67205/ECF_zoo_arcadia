@@ -1,0 +1,107 @@
+@import "./variables.scss";
+@import "./custom.scss";
+
+/* header */
+
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $vert;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky {
+  padding: 15px 100px;
+}
+
+header .logo {
+  color: $blanc;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .logo i {
+  color: $blanc;
+}
+
+header .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  color: $blanc;
+}
+header .menu a:hover {
+  color: $vert-clair;
+}
+
+header .icon {
+  font-size: 25px;
+  cursor: pointer;
+  color: $blanc;
+  display: none;
+}
+
+/* end */
+
+/* media queries */
+
+@media (max-width: 1100px) {
+  header .icon {
+    display: block;
+  }
+
+  header .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: $vert;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    padding: 80px 50px;
+    border-top: 0.1rem solid $noir;
+  }
+
+  header .menu.active {
+    right: 0;
+  }
+
+  header .menu .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a {
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem;
+  }
+}
