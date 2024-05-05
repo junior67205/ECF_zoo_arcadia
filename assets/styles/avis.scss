@@ -1,0 +1,63 @@
+@import "./custom.scss";
+@import "./variables.scss";
+
+/* avis */
+
+.avis .box-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avis .box {
+  background: $creme;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.avis .box i {
+  font-size: 20px;
+  color: $bleu;
+}
+
+.avis .box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 10px;
+}
+
+.avis .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.avis .box .info .name {
+  font-weight: 600;
+  font-size: 17px;
+}
+.avis .box .info .date {
+  font-size: 16px;
+  font-weight: 500;
+  color: $bleu;
+}
+
+@media (max-width: 1045px) {
+  .avis .box-container .box {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .avis .box-container .box {
+    width: 100%;
+  }
+}

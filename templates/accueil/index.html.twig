@@ -1,0 +1,210 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<!-- accueil -->
+
+    <section class="accueil" id="accueil">
+
+        <div class="content">
+            <h3>vivez une merveilleuse<br>
+            aventure avec les  <br> animaux</h3>
+        </div>
+
+    </section>
+
+    <!-- fin -->
+
+    <!-- à propos -->
+
+    <section class="apropos" id="apropos">
+
+        <h2 class="heading">A Propos</h2>
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="{{ asset('../assets/images/apropos.png') }}" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">Un parc écologique et autonome</h3>
+                <p>Situé près de la forêt de Brocliande, depuis 1960, nous mettons un point d'honneur à respecter l'environnement et notre autonomie, pour le bien de nos animaux et de nos visiteurs.</p>
+                <p>Vous pourrez venir découvrir nos différents habitats, qui reproduisent les lieux où vivent les animaux à l'état sauvage.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- fin -->
+
+    <!-- habitats -->
+
+    <section class="habitat" id="habitat">
+
+        <h2 class="heading">Nos habitats</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="{{ asset('../assets/images/savane.jpg') }}" alt="">
+                <div class="content">
+                    <h3>savane</h3>
+                    <a href="#" class="btn">voir plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="{{ asset('../assets/images/jungle.jpg') }}" alt="">
+                <div class="content">
+                    <h3>jungle</h3>
+                    <a href="#" class="btn">voir plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="{{ asset('../assets/images/marais.jpg') }}" alt="">
+                <div class="content">
+                    <h3>marais</h3>
+                    <a href="#" class="btn">voir plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="{{ asset('../assets/images/prairie.jpg') }}" alt="">
+                <div class="content">
+                    <h3>prairie</h3>
+                    <a href="#" class="btn">voir plus</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- fin -->
+
+    <!-- animaux -->
+
+    <section class="animaux" id="animaux">
+
+        <h2 class="heading">gallerie</h2>
+
+        <div class="box-container">
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+          <img class="image-item" src="{{ asset('../assets/images/animal-1.jpg') }}" alt="img-1" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-2.jpg') }}" alt="img-2" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-3.jpg') }}" alt="img-3" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-4.jpg') }}" alt="img-4" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-5.jpg') }}" alt="img-5" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-6.jpg') }}" alt="img-6" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-7.jpg') }}" alt="img-7" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-8.jpg') }}" alt="img-8" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-9.jpg') }}" alt="img-9" />
+          <img class="image-item" src="{{ asset('../assets/images/animal-10.jpg') }}" alt="img-10" />
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+
+    <!-- fin -->
+
+    <!-- type de services -->
+
+    <section class="typedeservices" id="typedeservices">
+
+        <h2 class="heading">Nos services</h2>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img class="img-area"src="{{ asset('../assets/images/restauration.jpg') }}" alt="">
+                    <div class="img-text">
+                        <span class="header-text"><strong>Restauration</strong></span>
+                        <p>Notre zoo comporte plusieur zone de restauration en fonction de l'endroit</p>
+                    </div>
+                </div>
+
+
+                <div class="box">
+                    <img class="img-area"src="{{ asset('../assets/images/restauration.jpg') }}" alt="">
+                    <div class="img-text">
+                        <span class="header-text"><strong>Visite</strong></span>
+                        <p>Notre zoo comporte plusieurs façon de vous faire découvrir notre univers</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img class="img-area"src="{{ asset('../assets/images/restauration.jpg') }}" alt="">
+                    <div class="img-text">
+                        <span class="header-text"><strong>Immersion</strong></span>
+                        <p>Vous pourrez voir nos animaux au plus près grace à notre personnels</p>
+                    </div>
+                </div>
+
+            </div>
+    
+    </section>
+
+    <!-- fin -->
+
+    <!-- avis -->
+
+    <section class="avis" id="avis">
+
+        <h2 class="heading">Vos avis</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>La journée c'est bien passée avec toute la famille, nous avons pu nous changer l'air et nous amuser.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">Alex Smith</div>
+                        <div class="date">19/04/2024</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>La journée c'est bien passée avec toute la famille, nous avons pu nous changer l'air et nous amuser.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">Marc Dupont</div>
+                        <div class="date">19/04/2024</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>La journée c'est bien passée avec toute la famille, nous avons pu nous changer l'air et nous amuser.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">Morgane Trou</div>
+                        <div class="date">19/04/2024</div>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+
+{% endblock %}

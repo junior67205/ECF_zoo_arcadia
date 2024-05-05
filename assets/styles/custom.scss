@@ -1,0 +1,79 @@
+@import "./variables.scss";
+
+* {
+  font-family: $texte;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+section {
+  padding: 8rem 7%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: $vert;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+  font-family: $titre;
+}
+
+.btn {
+  font-size: 1.7rem;
+  display: inline-block;
+  background: $vert;
+  color: $blanc;
+  box-shadow: $box-shadow;
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: $vert-clair;
+  z-index: -1;
+  transition: 0.3s linear;
+  left: 0;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 8rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

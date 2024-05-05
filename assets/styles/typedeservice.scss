@@ -1,0 +1,53 @@
+@import "./custom.scss";
+@import "./variables.scss";
+
+.typedeservices {
+  background: $creme;
+}
+
+.typedeservices .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.typedeservices .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  background-color: $blanc;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.typedeservices img {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid $bleu-clair;
+}
+
+.header-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.img-text {
+  padding-top: 20px;
+}
+
+.img-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}

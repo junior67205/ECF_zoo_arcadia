@@ -1,0 +1,37 @@
+@import "./custom.scss";
+@import "./variables.scss";
+
+/* a propos */
+
+.apropos .box-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.apropos .box-container .image {
+  flex: 1 1 31rem;
+}
+
+.apropos .box-container .image img {
+  width: 100%;
+}
+
+.apropos .content {
+  flex: 1 1 41rem;
+}
+
+.apropos .content .title {
+  font-size: 4rem;
+  color: $noir;
+}
+
+.apropos .content p {
+  font-size: 1.7rem;
+  color: $gris;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+/* fin */

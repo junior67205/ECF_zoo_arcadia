@@ -1,0 +1,41 @@
+@import "./variables.scss";
+@import "./custom.scss";
+/* accueil */
+
+.accueil {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(/assets/images/accueil.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.accueil .content {
+  max-width: 60rem;
+}
+
+.accueil .content h3 {
+  color: $blanc;
+  font-size: 6rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .accueil {
+    background-position: left;
+  }
+
+  .accueil .content h3 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .accueil .content h3 {
+    font-size: 4rem;
+  }
+}
+/* fin */
