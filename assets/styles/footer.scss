@@ -1,0 +1,98 @@
+@import "./custom.scss";
+@import "./variables.scss";
+
+.footer {
+  flex-shrink: 0;
+  border-top: 1px dashed $vert-clair;
+  width: 100%;
+  background: $vert;
+  color: $blanc;
+}
+
+.footer .box-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 50px 0 100px;
+}
+
+.footer .box {
+  flex-basis: 20%;
+  margin: 0 30px;
+}
+
+/* contact */
+.footer .box h3 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.footer .box p {
+  padding: 5px 0;
+}
+
+/* Services */
+
+.service-list,
+.schedule-list,
+.media-list {
+  list-style-type: none;
+}
+.service-list li {
+  padding: 2px 0;
+}
+.service-list a {
+  text-decoration: none;
+  color: $blanc;
+}
+.service-list a:hover {
+  color: $vert-clair;
+}
+
+/* Medias */
+
+.media-list {
+  position: relative;
+  right: 10px;
+}
+.media-list svg {
+  width: 30px;
+  margin: 10px 10px;
+}
+.media-list a {
+  text-decoration: none;
+  color: $blanc;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1000px) {
+  .footer .box-container {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer .box {
+    flex-basis: auto;
+    margin: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer .box-container {
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .footer .box {
+    flex-basis: 70%;
+    /* margin: 10px; */
+  }
+  .footer .box h3 {
+    padding-bottom: 5px;
+  }
+}
