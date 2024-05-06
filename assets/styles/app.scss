@@ -1,5 +1,8 @@
 @import "./custom.scss";
 @import "./variables.scss";
+
+/* Page d'accueil */
+
 @import "./navbar.scss";
 @import "./accueil.scss";
 @import "./apropos.scss";
@@ -8,3 +11,7 @@
 @import "./typedeservice.scss";
 @import "./avis.scss";
 @import "./footer.scss";
+
+/* Page formulaires */
+
+@import "./formulaires.scss";
